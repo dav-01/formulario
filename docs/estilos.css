@@ -1,12 +1,38 @@
+body{
+    background-color: blue;
+    background-image: url(https://image.jimcdn.com/app/cms/image/transf/none/path/sabe6429baa2db6cc/image/ifa9beaa64ac79def/version/1580178824/image.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 form{
     height: 140px;
 }
 table{
+    margin: 180px 0px 0px 440px;
     background-color: red;
-    margin: auto;
-    border: solid 1px;
+    border: solid 5px;
+    border-radius: 10px;
 }
 
-.bit{
-    display: flex;
+h1{
+    margin: 0px;
+    text-align: center;
+}
+
+input{
+    margin: 7px 0px 7px 0px;
+}
+
+label{
+    font-weight: bold;
+}
+
+
+.botoncrear{
+    margin-left: 22px;
+}
+
+.botoneliminar{
+    margin-right: 22px;
 }
