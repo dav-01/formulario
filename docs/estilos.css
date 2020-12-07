@@ -5,7 +5,7 @@ body{
 }
 
 form{
-    height: 140px;
+    height: 80px;
 }
 table{
     margin: 180px 0px 0px 440px;
@@ -34,4 +34,12 @@ label{
 
 .botoneliminar{
     margin-right: 22px;
+}
+.registrado{
+    margin: 250px 575px 0px 480px;
+    background-color: green;
+}
+.error{
+    margin: 250px 575px 0px 480px;
+    background-color: red;
 }

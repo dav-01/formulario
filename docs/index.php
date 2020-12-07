@@ -7,7 +7,7 @@
     </head>
     <body>
 
-        <form class="" action="leng.php" method="POST">
+        <form class="" action="#" method="POST">
             <table>
                 <tr>
                     <td colspan="4"><h1>Datos personales</h1></td>
@@ -26,12 +26,12 @@
                 </tr>
                 <tr>
                     <td> <label for="">Sexo:</label> </td>
-                    <td colspan="3"><input type="radio" name="sexo" value="M">Masculino
-                        <input type="radio" name="sexo" value="F">Femenino</td>
+                    <td colspan="3"><input type="radio" name="sexo" value="M"> Masculino
+                        <input type="radio" name="sexo" value="F"> Femenino</td>
                 </tr>
                 <tr>
                     <td><label for="">Celular:</label></td>
-                    <td colspan="3"><input type="text" name=celular"" value="" placeholder="Ingrese su numero celular"></td>
+                    <td colspan="3"><input type="text" name="celular" value="" placeholder="Ingrese su numero celular"></td>
                 </tr>
                 <tr>
                     <td><label for="">Fecha</label></td>
@@ -39,13 +39,15 @@
                 </tr>
                 <tr>
                     <td> <input type="submit" name="enviar" value="Crear" class="botoncrear"></td>
-                    <td ><input type="submit" name="" value="Leer" class="bit"></td>
+                    <td ><input type="submit" name="" value="Leèr" class="bit"></td>
                     <td><input type="submit" name="" value="Actualizar" class="bit"></td>
                     <td><input type="submit" name="" value="Eliminar" class="botoneliminar"></td>
                 </tr>
 
             </table>
         </form>
-
+        <?php
+        include("leng.php")
+        ?>
     </body>
 </html>

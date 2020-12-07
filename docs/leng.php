@@ -1,13 +1,28 @@
 <?php
-    $con=mysqli_connect('localhost','formulario') or die('Error en la conexion al servidor');
 
-    $sql="INSERT INTO datos
-    VALUES (null,'".$_POST["nombre"]."','".$_POST["apellido"]."','".$_POST["edad"]."',
-    '".$_POST["sexo"]."','".$_POST["celular"]."','".$_POST["fecha"]."')";
+$conex = mysqli_connect("localhost","root","","formulario");
 
-    $resultado=mysqli_query($con, $sql) or die ('Error en el query database');
+if (isset($_POST['enviar'])) {
+        $nombre = trim($_POST['nombre']);
+        $apellido = trim($_POST['apellido']);
+        $edad = trim($_POST['edad']);
+        $sexo = trim($_POST['sexo']);
+        $celular = trim($_POST['celular']);
+        $fecha = trim($_POST['fecha']);
 
-    mysqli_close($con);
+        $consulta = "INSERT INTO datos(nombre, apellido, edad, sexo, celular, fecha)
+        VALUES ('$nombre', '$apellido', '$edad', '$sexo', '$celular', '$fecha')";
 
-    echo "los datos han sido enviados";
+        $resultado = mysqli_query($conex,$consulta);
+        if ($resultado) {
+            ?>
+            <h3 class="registrado">Te has incrito correctamente</h3>
+            <?php
+        } else {
+            ?>
+            <h3 class="error">Ha ocurrido un error</h3>
+            <?php
+        }
+    }
+
 ?>
