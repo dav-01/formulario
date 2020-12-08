@@ -1,21 +1,48 @@
+.contenedor{
+    height: 320px;
+    width: 300px;
+    background-color: red;
+    border: solid 5px;
+    border-radius: 10px;
+    margin: 175px 0px 0px 430px;
+}
+
+.botones{
+    text-align: center;
+    margin-top: 12px;
+}
+.boton{
+    margin: 5px 5px 5px 5px;
+}
+.label_nombre{
+    margin-right: 15px;
+}
+.label_apellido{
+    margin-right: 14px;
+}
+.label_edad{
+    margin-right: 41px;
+}
+.label_sexo{
+    margin-right: 46px;
+}
+.label_celular{
+    margin-right: 27px;
+}
+
+label{
+    margin: 0px 0px 0px 10px;
+    font-weight: bold;
+}
+
 body{
     background-image: url(https://image.jimcdn.com/app/cms/image/transf/none/path/sabe6429baa2db6cc/image/ifa9beaa64ac79def/version/1580178824/image.jpg);
     background-repeat: no-repeat;
     background-size: cover;
 }
 
-form{
-    height: 80px;
-}
-table{
-    margin: 180px 0px 0px 440px;
-    background-color: red;
-    border: solid 5px;
-    border-radius: 10px;
-}
-
 h1{
-    margin: 0px;
+    margin: 0px 0px 10px 0px;
     text-align: center;
 }
 
@@ -23,23 +50,11 @@ input{
     margin: 7px 0px 7px 0px;
 }
 
-label{
-    font-weight: bold;
-}
-
-
-.botoncrear{
-    margin-left: 22px;
-}
-
-.botoneliminar{
-    margin-right: 22px;
-}
 .registrado{
-    margin: 250px 575px 0px 480px;
+    margin: 20px 580px 0px 480px;
     background-color: green;
 }
 .error{
-    margin: 250px 575px 0px 480px;
+    margin: 20px 580px 0px 480px;
     background-color: red;
 }
